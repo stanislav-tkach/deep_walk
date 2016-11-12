@@ -45,5 +45,5 @@ Deep_walk is licensed under the MIT license (see the `LICENSE` file).
 [appveyor]: https://ci.appveyor.com/project/DarkEld3r/deep_walk
 [coveralls-img]: https://coveralls.io/repos/github/DarkEld3r/deep_walk/badge.svg?branch=master
 [coveralls]: https://coveralls.io/github/DarkEld3r/deep_walk?branch=master
-[clippy-img]: http://clippy.bashy.io/github/DarkEld3r/deep_walk/master/badge.svg
-[clippy]: http://clippy.bashy.io/github/DarkEld3r/deep_walk/master/log
+[clippy-img]: https://clippy.bashy.io/github/DarkEld3r/deep_walk/master/badge.svg
+[clippy]: https://clippy.bashy.io/github/DarkEld3r/deep_walk/master/log
