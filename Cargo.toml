@@ -1,5 +1,5 @@
 [package]
-name = "deep-walk"
+name = "deep_walk"
 version = "0.0.1"
 authors = ["DarkEld3r <stanislav.tkach@gmail.com>"]
 
