@@ -2,5 +2,9 @@
 name = "deep_walk"
 version = "0.0.1"
 authors = ["DarkEld3r <stanislav.tkach@gmail.com>"]
-
-[dependencies]
+description = "Recursive directory/archive walk."
+repository = "https://github.com/DarkEld3r/deep_walk.git"
+homepage = "https://github.com/DarkEld3r/deep_walk.git"
+license = "MIT"
+readme = "README.md"
+keywords = ["directory", "archive", "recursive", "walk"]
