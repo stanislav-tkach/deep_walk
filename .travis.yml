@@ -7,3 +7,5 @@ script:
   - cargo build --verbose
   - cargo test --verbose
   - cargo doc
+after_success:
+  - travis-cargo coveralls --no-sudo
