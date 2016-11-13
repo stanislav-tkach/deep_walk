@@ -41,6 +41,25 @@ pub struct Error {
 
 #[cfg(test)]
 mod tests {
+    use super::DeepWalk;
+    use std::path::Path;
+
+    fn get_test_roots() -> &'static[&'static str] {
+        const DATA: &'static[&'static str] = &["", "a", "test", "eee/aaa", "some/long/path"];
+        DATA
+    }
+
     #[test]
-    fn it_works() {}
+    fn deep_walk_new() {
+        for val in get_test_roots() {
+            assert_eq!(DeepWalk::new(val).root, Path::new(val));
+        }
+    }
+
+    #[test]
+    fn deep_walk_into_iterator() {
+        for val in get_test_roots() {
+            assert_eq!(DeepWalk::new(val).into_iter().root, Path::new(val));
+        }
+    }
 }
