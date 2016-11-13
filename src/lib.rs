@@ -15,13 +15,12 @@ impl IntoIterator for DeepWalk {
     type IntoIter = Iter;
 
     fn into_iter(self) -> Iter {
-        Iter {
-        }
+        Iter { root: self.root }
     }
 }
 
 pub struct Iter {
-    //
+    root: PathBuf,
 }
 
 impl Iterator for Iter {
@@ -43,7 +42,5 @@ pub struct Error {
 #[cfg(test)]
 mod tests {
     #[test]
-    fn it_works() {
-    }
+    fn it_works() {}
 }
-
