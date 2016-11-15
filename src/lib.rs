@@ -23,6 +23,7 @@ pub struct Iter {
     root: PathBuf,
 }
 
+// TODO: Remove and implement Iterator for DeepWalk.
 impl Iterator for Iter {
     type Item = Result<Entry, Error>;
 
