@@ -1,5 +1,5 @@
 use std::path::{Path, PathBuf};
-use std::fs::self;
+use std::fs::{self, read_dir};
 
 pub struct DeepWalk {
     root: PathBuf,
@@ -29,7 +29,7 @@ impl Iterator for Iter {
     type Item = Result<Entry, Error>;
 
     fn next(&mut self) -> Option<Result<Entry, Error>> {
-        let metadata = fs::metadata(self.root);
+        let metadata = fs::metadata(&self.root);
         None
     }
 }
